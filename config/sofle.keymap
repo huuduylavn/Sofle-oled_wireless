@@ -90,9 +90,9 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp HOME      &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp END       &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -107,9 +107,9 @@
 
             label = "adjust";
             bindings = <
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &trans  &none  &none  &none  &none  &none
+&bt BT_CLR         &kp I            &kp L            &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &trans  &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none   &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none   &none  &none  &none  &none  &none
+&none              &kp O            &kp P            &none            &none            &none                                      &none   &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none   &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none   &none  &none  &none
             >;
@@ -117,10 +117,10 @@
 
         fn4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 2
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 3
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 4
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
