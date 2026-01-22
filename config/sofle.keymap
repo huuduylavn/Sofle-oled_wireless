@@ -69,20 +69,6 @@
             bindings = <&kp LA(F4)>;
             label = "ALTF4";
         };
-
-        altshifttrai: altshifttrai {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(LESS_THAN))>;
-            label = "ALTSHIFTTRAI";
-        };
-
-        altshiftphai: altshiftphai {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LS(GREATER_THAN))>;
-            label = "ALTSHIFTPHAI";
-        };
     };
 
     keymap {
@@ -142,11 +128,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F11  &kp F6  &kp F7         &kp F8  &kp F9         &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans         &trans  &kp HOME       &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &altshifttrai  &trans  &altshiftphai  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&altf4   &trans  &trans         &trans  &kp END        &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans         &trans  &trans         &trans   &trans    &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&altf4   &trans  &trans  &trans  &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
