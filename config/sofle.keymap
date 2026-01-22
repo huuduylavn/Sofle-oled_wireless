@@ -28,13 +28,6 @@
     };
 
     macros {
-        quite: quite {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp P &kp ENTER &kp ENTER>;
-            label = "QUITE";
-        };
-
         ctrshifti: ctrshifti {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -109,11 +102,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&ctrlshiftn  &kp F12     &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans      &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &ctrshifti  &altsme   &shiftf5      &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp F12  &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans    &trans        &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -129,9 +122,9 @@
 
             bindings = <
 &kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp U   &kp J   &wine   &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Y   &kp M   &wind   &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&altf4   &kp K   &kp N   &winr   &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp U   &kp J   &trans  &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Y   &kp M   &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp K   &kp N   &trans  &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                  &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
