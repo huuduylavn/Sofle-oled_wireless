@@ -51,10 +51,10 @@ layers:
   - .
   - /
   - RSHFT
-  - LEFT GUI
+  - raise
   - LALT
   - adjust
-  - {t: SPACE, h: raise}
+  - SPACE
   - lower
   - ENTER
   - SPACE
@@ -136,9 +136,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - K
+  - J
+  - '&wine'
   - HOME
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -148,9 +148,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Y
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&wind'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -160,9 +160,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&altf4'
+  - K
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&winr'
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -173,10 +173,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
