@@ -282,7 +282,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: BT, h: '3'}
   - '&ctrshifti'
-  - {t: ▽, type: trans}
+  - '&altsme'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
