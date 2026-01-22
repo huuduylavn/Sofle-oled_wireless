@@ -55,6 +55,34 @@
             bindings = <&kp LS(F5)>;
             label = "SHIFTF5";
         };
+
+        ctrlshiftn: ctrlshiftn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(N))>;
+            label = "CTRLSHIFTN";
+        };
+
+        altf4: altf4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F4)>;
+            label = "ALTF4";
+        };
+
+        altshifttrai: altshifttrai {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(LESS_THAN))>;
+            label = "ALTSHIFTTRAI";
+        };
+
+        altshiftphai: altshiftphai {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LS(GREATER_THAN))>;
+            label = "ALTSHIFTPHAI";
+        };
     };
 
     keymap {
@@ -95,11 +123,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F12  &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans    &trans        &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
+&ctrlshiftn  &kp F12     &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans      &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &ctrshifti  &altsme   &shiftf5      &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -117,7 +145,7 @@
 &kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &trans  &trans  &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&altf4   &trans  &trans  &trans  &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                  &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -133,7 +161,7 @@
             label = "adjust";
             bindings = <
 &kp GRAVE  &kp I         &kp L         &trans     &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp NUMBER_6  &kp N7        &kp N8     &kp N9            &kp N0                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp DOT    &kp NUMBER_6  &kp N7        &kp N8     &kp N9            &kp N0                               &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp O         &kp S         &kp P      &kp MINUS         &kp EQUAL                            &trans  &trans  &trans  &trans  &trans  &trans
 &kp PLUS   &kp MINUS     &kp ASTERISK  &kp SLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans        &trans     &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
