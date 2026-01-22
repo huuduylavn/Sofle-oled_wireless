@@ -133,11 +133,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F12  &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans    &trans        &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
+&ctrlshiftn  &kp F12     &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans      &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
+&quite       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &ctrshifti  &altsme   &shiftf5      &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -153,9 +153,9 @@
 
             bindings = <
 &kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp U   &kp J   &trans  &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Y   &kp M   &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp K   &kp N   &trans  &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp U   &kp J   &wine   &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Y   &kp M   &wind   &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp K   &kp N   &winr   &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                  &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
@@ -170,7 +170,7 @@
 
             label = "adjust";
             bindings = <
-&kp GRAVE   &kp I         &kp L         &trans     &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE   &kp I         &kp L         &trans     &altf4            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
 &kp COMMA   &kp NUMBER_6  &kp N7        &kp N8     &kp N9            &kp N0                               &trans  &trans  &trans  &trans  &trans  &trans
 &kp PERIOD  &kp O         &kp S         &kp P      &kp MINUS         &kp EQUAL                            &trans  &trans  &trans  &trans  &trans  &trans
 &kp PLUS    &kp MINUS     &kp ASTERISK  &kp SLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
