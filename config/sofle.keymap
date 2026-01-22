@@ -73,24 +73,21 @@
         wine: wine {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&macro_press>, <&kp E>;
-
+            bindings = <&kp LG(E)>;
             label = "WINE";
         };
 
         wind: wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&macro_press>, <&kp D>;
-
+            bindings = <&kp LG(D)>;
             label = "WIND";
         };
 
         winr: winr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&macro_press>, <&kp R>;
-
+            bindings = <&kp LG(R)>;
             label = "WINR";
         };
     };
