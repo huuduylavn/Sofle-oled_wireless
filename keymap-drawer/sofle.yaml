@@ -296,7 +296,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: BT, h: '4'}
   - '&quite'
-  - {t: ▽, type: trans}
+  - '&wine'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
