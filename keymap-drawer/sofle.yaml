@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&quite'
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -136,7 +136,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - K
+  - U
   - J
   - '&wine'
   - HOME
@@ -149,7 +149,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Y
-  - {t: ▽, type: trans}
+  - M
   - '&wind'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
   - {t: ▽, type: trans}
   - '&altf4'
   - K
-  - {t: ▽, type: trans}
+  - N
   - '&winr'
   - END
   - {t: ▽, type: trans}
