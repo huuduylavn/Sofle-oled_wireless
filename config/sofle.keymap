@@ -132,7 +132,7 @@
             bindings = <
 &ctrlshiftn  &kp F12     &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans      &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
-&quite       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &ctrshifti  &altsme   &shiftf5      &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
             >;
