@@ -283,9 +283,9 @@ layers:
   - {t: BT, h: '3'}
   - '&ctrshifti'
   - '&altsme'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&shiftf5'
+  - '&ctrlshiftn'
+  - '&altf4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
