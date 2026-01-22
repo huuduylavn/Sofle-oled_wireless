@@ -69,27 +69,6 @@
             bindings = <&kp LA(F4)>;
             label = "ALTF4";
         };
-
-        wine: wine {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp E>;
-            label = "WINE";
-        };
-
-        wind: wind {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp D>;
-            label = "WIND";
-        };
-
-        winr: winr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp R>;
-            label = "WINR";
-        };
     };
 
     keymap {
