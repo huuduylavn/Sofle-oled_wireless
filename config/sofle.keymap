@@ -6,9 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
 #define LOWER 1
@@ -89,11 +87,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F11  &kp F6      &kp F7     &kp F8       &kp F9    &kp F10                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp INS     &kp PSCRN  &kp K_CMENU  &kp HOME  &trans                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp LALT    &kp LCTRL  &kp LSHFT    &trans    &kp CLCK                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp END   &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans     &trans       &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -107,11 +105,11 @@
 
             label = "adjust";
             bindings = <
-&bt BT_CLR         &kp I         &kp L   &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4                                 &trans  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &kp NUMBER_6  &kp N7  &kp N8        &kp N9            &kp N0                                       &none   &none  &none  &none  &none  &none
-&none              &kp O         &kp P   &none         &kp MINUS         &kp EQUAL                                    &none   &none  &none  &none  &none  &none
-&none              &none         &none   &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &rgb_ug RGB_TOG    &none  &none   &none  &none  &none  &none  &none
-                                 &none   &none         &none             &none              &none              &none  &none   &none  &none  &none
+&trans  &kp I         &kp L   &trans  &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9            &kp N0                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp O         &kp P   &trans  &kp MINUS         &kp EQUAL                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
