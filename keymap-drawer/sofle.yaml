@@ -281,7 +281,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '3'}
-  - {t: ▽, type: trans}
+  - '&ctrshifti'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
