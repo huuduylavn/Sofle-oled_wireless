@@ -62,7 +62,7 @@ layers:
   - fn4
   - DELETE
   lower:
-  - {t: ▽, type: trans}
+  - '&ctrlshiftn'
   - F12
   - F2
   - F3
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&quite'
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -99,9 +99,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&ctrshifti'
+  - '&altsme'
+  - '&shiftf5'
   - PAGE DOWN
   - BACKSPACE
   - {t: ▽, type: trans}
@@ -138,7 +138,7 @@ layers:
   - {t: ▽, type: trans}
   - U
   - J
-  - {t: ▽, type: trans}
+  - '&wine'
   - HOME
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -150,7 +150,7 @@ layers:
   - {t: ▽, type: trans}
   - Y
   - M
-  - {t: ▽, type: trans}
+  - '&wind'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -162,7 +162,7 @@ layers:
   - {t: ▽, type: trans}
   - K
   - N
-  - {t: ▽, type: trans}
+  - '&winr'
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,7 +188,7 @@ layers:
   - I
   - L
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&altf4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
