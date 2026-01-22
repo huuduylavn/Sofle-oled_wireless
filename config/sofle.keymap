@@ -160,7 +160,7 @@
 &trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 2
 &trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 3
 &ctrshifti  &altsme  &shiftf5  &ctrlshiftn  &altf4  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 4
-                     &trans    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                     &quite    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
