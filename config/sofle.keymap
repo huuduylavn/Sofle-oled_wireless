@@ -21,12 +21,51 @@
 
         adjust_layer {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
 
         fn4 {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <2 4>;
+            then-layer = <5>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        ctrlP {
+            bindings = <&kp LC(P)>;
+            key-positions = <1 2>;
+        };
+    };
+
+    macros {
+        quite: quite {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(P) &kp ENTER &kp ENTER>;
+            label = "QUITE";
+        };
+
+        ctrshifti: ctrshifti {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(I))>;
+            label = "CTRSHIFTI";
+        };
+
+        altsme: altsme {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp S &kp M &kp E>;
+            label = "ALTSME";
+        };
+
+        shiftf5: shiftf5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F5)>;
+            label = "SHIFTF5";
         };
     };
 
@@ -105,11 +144,11 @@
 
             label = "adjust";
             bindings = <
-&trans  &kp I         &kp L   &trans  &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_6  &kp N7  &kp N8  &kp N9            &kp N0                               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp O         &kp P   &trans  &kp MINUS         &kp EQUAL                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans  &trans  &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp I         &kp L         &trans     &trans            &trans                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp NUMBER_6  &kp N7        &kp N8     &kp N9            &kp N0                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp O         &kp S         &kp P      &kp MINUS         &kp EQUAL                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp PLUS   &kp MINUS     &kp ASTERISK  &kp SLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans        &trans     &trans            &trans             &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
