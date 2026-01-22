@@ -62,6 +62,13 @@
             bindings = <&kp LA(F4)>;
             label = "ALTF4";
         };
+
+        quite: quite {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp P &kp ENTER &kp ENTER>;
+            label = "QUITE";
+        };
     };
 
     keymap {
@@ -149,11 +156,11 @@
 
         fn4 {
             bindings = <
-&trans      &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1
-&trans      &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 2
-&trans      &trans   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 3
-&ctrshifti  &altsme  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 4
-                     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1
+&trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 2
+&trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 3
+&ctrshifti  &altsme  &shiftf5  &ctrlshiftn  &altf4  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 4
+                     &trans    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
