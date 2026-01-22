@@ -69,6 +69,14 @@
             bindings = <&kp LEFT_ALT &kp P &kp ENTER &kp ENTER>;
             label = "QUITE";
         };
+
+        wine: wine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI>, <&macro_press>, <&kp E>;
+
+            label = "WINE";
+        };
     };
 
     keymap {
@@ -160,7 +168,7 @@
 &trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 2
 &trans      &trans   &trans    &trans       &trans  &trans                    &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 3
 &ctrshifti  &altsme  &shiftf5  &ctrlshiftn  &altf4  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans        &bt BT_SEL 4
-                     &quite    &trans       &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                     &quite    &wine        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
