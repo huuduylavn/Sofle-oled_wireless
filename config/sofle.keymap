@@ -31,7 +31,7 @@
         quite: quite {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(P) &kp ENTER &kp ENTER>;
+            bindings = <&kp LEFT_ALT &kp P &kp ENTER &kp ENTER>;
             label = "QUITE";
         };
 
