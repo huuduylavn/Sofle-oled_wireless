@@ -62,7 +62,7 @@ layers:
   - fn4
   - DELETE
   lower:
-  - {t: ▽, type: trans}
+  - '&ctrlshiftn'
   - F12
   - F2
   - F3
@@ -99,9 +99,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&ctrshifti'
+  - '&altsme'
+  - '&shiftf5'
   - PAGE DOWN
   - BACKSPACE
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&altf4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -196,7 +196,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
   - '6'
   - '7'
   - '8'
