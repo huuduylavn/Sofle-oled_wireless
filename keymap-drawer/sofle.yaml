@@ -79,7 +79,7 @@ layers:
   - {t: ▽, type: trans}
   - UP ARROW
   - PAGE UP
-  - MENU
+  - APPLICATION
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,7 +140,7 @@ layers:
   - J
   - '&wine'
   - HOME
-  - {t: ▽, type: trans}
+  - H
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -159,7 +159,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT GUI
   - K
   - N
   - '&winr'
