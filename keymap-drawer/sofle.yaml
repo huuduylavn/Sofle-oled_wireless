@@ -152,7 +152,7 @@ layers:
   - M
   - '&wind'
   - '&altlf'
-  - {t: ▽, type: trans}
+  - '&ctrlshifts'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
