@@ -90,6 +90,13 @@
             bindings = <&kp LG(R)>;
             label = "WINR";
         };
+
+        altlf: altlf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp L &kp F>;
+            label = "ALTLF";
+        };
     };
 
     keymap {
@@ -110,7 +117,7 @@
 &kp TAB           &kp Q   &kp W   &kp E     &kp R   &kp T                           &kp Y      &kp U          &kp I      &kp O       &kp P      &kp ENTER
 &kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F   &kp G                           &kp H      &kp J          &kp K      &kp L       &kp SEMI   &kp SQT
 &kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V   &kp B      &trans    &trans     &kp N      &kp M          &kp COMMA  &kp DOT     &kp SLASH  &kp RSHFT
-                          &mo 2   &kp LALT  &mo 3   &kp SPACE  &mo 1     &kp ENTER  &kp SPACE  &kp BACKSPACE  &mo 4      &kp DELETE
+                          &mo 3   &kp LALT  &mo 2   &kp SPACE  &mo 1     &kp ENTER  &kp SPACE  &kp BACKSPACE  &mo 4      &kp DELETE
             >;
 
             sensor-bindings =
@@ -153,7 +160,7 @@
             bindings = <
 &kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &kp U   &kp J   &wine   &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Y   &kp M   &wind   &trans    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Y   &kp M   &wind   &altlf    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &kp K   &kp N   &winr   &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                  &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
             >;
