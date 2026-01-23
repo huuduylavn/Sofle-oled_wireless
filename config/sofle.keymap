@@ -144,11 +144,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&ctrlshiftn  &kp F12     &kp F2    &kp F3        &kp F4           &kp F5                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &kp DEL     &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_MENU                       &trans  &trans  &trans  &trans  &trans  &trans
-&quite       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &ctrshifti  &altsme   &shiftf5      &kp PAGE_DOWN    &kp BACKSPACE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans    &trans        &trans           &trans         &trans    &trans  &trans  &trans  &trans  &trans
+&ctrlshiftn  &kp F12     &kp F2    &kp F3        &kp F4           &kp F5                               &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &kp DEL     &trans    &kp UP_ARROW  &kp PAGE_UP      &kp K_APPLICATION                    &trans  &trans  &trans  &trans  &trans  &trans
+&quite       &trans      &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp ENTER                            &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &ctrshifti  &altsme   &shiftf5      &kp PAGE_DOWN    &kp BACKSPACE      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans    &trans        &trans           &trans             &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LA(LS(PERIOD)) LA(LS(COMMA))>;
@@ -165,11 +165,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp U   &kp J   &wine   &kp HOME  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Y   &kp M   &wind   &altlf    &ctrlshifts                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp K   &kp N   &winr   &kp END   &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans    &trans       &trans    &trans  &trans  &trans  &trans  &trans
+&kp F11       &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &kp U   &kp J   &wine   &kp HOME  &kp H                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &kp Y   &kp M   &wind   &altlf    &ctrlshifts                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_GUI  &kp K   &kp N   &winr   &kp END   &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans    &trans       &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
