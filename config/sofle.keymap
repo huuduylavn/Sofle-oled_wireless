@@ -16,7 +16,14 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        la4 {
+            if-layers = <1 3>;
+            then-layer = <4>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
