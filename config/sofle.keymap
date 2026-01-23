@@ -97,6 +97,13 @@
             bindings = <&kp LEFT_ALT &kp L &kp F>;
             label = "ALTLF";
         };
+
+        ctrlshifts: ctrlshifts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(S))>;
+            label = "CTRLSHIFTS";
+        };
     };
 
     keymap {
@@ -158,11 +165,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp U   &kp J   &wine   &kp HOME  &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp Y   &kp M   &wind   &altlf    &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp K   &kp N   &winr   &kp END   &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans    &trans   &trans    &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp U   &kp J   &wine   &kp HOME  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Y   &kp M   &wind   &altlf    &ctrlshifts                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp K   &kp N   &winr   &kp END   &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans  &trans    &trans       &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
