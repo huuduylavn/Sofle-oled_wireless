@@ -164,7 +164,7 @@ layers:
   - N
   - '&winr'
   - END
-  - {t: ▽, type: trans}
+  - BACK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
