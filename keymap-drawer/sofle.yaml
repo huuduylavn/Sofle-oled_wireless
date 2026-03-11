@@ -305,6 +305,3 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-combos:
-- p: [13, 17]
-  k: Ctl+P
