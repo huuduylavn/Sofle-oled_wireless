@@ -24,12 +24,84 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        ctrlp {
-            bindings = <&kp LC(P)>;
-            key-positions = <13 17>;
+    macros {
+        ctrshifti: ctrshifti {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(I))>;
+            label = "CTRSHIFTI";
+        };
+
+        altsme: altsme {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp S &kp M &kp E>;
+            label = "ALTSME";
+        };
+
+        shiftf5: shiftf5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F5)>;
+            label = "SHIFTF5";
+        };
+
+        ctrlshiftn: ctrlshiftn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(N))>;
+            label = "CTRLSHIFTN";
+        };
+
+        altf4: altf4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(F4)>;
+            label = "ALTF4";
+        };
+
+        quite: quite {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp P &kp ENTER &kp ENTER>;
+            label = "QUITE";
+        };
+
+        wine: wine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(E)>;
+            label = "WINE";
+        };
+
+        wind: wind {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(D)>;
+            label = "WIND";
+        };
+
+        winr: winr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(R)>;
+            label = "WINR";
+        };
+
+        altlf: altlf {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp L &kp F>;
+            label = "ALTLF";
+        };
+
+        ctrlshifts: ctrlshifts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(S))>;
+            label = "CTRLSHIFTS";
         };
     };
 
