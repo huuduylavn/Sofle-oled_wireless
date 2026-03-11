@@ -124,26 +124,26 @@
 
         layer_1 {
             bindings = <
-&ctrlshiftn    &kp F12     &kp F2    &kp F3          &kp F4         &kp F5                                   &trans  &trans  &trans  &trans  &trans  &trans
+&ctrlshiftn    &kp F1      &kp F2    &kp F3          &kp F4         &kp F5                                   &trans  &trans  &trans  &trans  &trans  &trans
 &kp BACKSLASH  &kp DEL     &trans    &kp UP_ARROW    &kp PAGE_UP    &kp K_APPLICATION                        &trans  &trans  &trans  &trans  &trans  &trans
-&quite         &trans      &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp ENTER                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &ctrshifti  &altsme   &shiftf5        &kp PAGE_DOWN  &kp BACKSPACE      &kp K_MUTE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&quite         &kp F12     &kp LEFT  &kp DOWN_ARROW  &kp RIGHT      &kp ENTER                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPS       &ctrshifti  &altsme   &shiftf5        &kp PAGE_DOWN  &kp BACKSPACE      &kp K_MUTE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                            &trans    &trans          &trans         &trans             &trans        &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
-                <&inc_dec_kp LA(LS(PERIOD)) LA(LS(COMMA))>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp F11  &kp F6  &kp F7  &kp F8  &kp F9    &kp F10                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp U   &kp J   &wine   &kp HOME  &kp H                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp Y   &kp M   &wind   &altlf    &ctrlshifts                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp K   &kp N   &winr   &kp END   &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans  &trans    &trans       &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LA(LS(PERIOD)) LA(LS(COMMA))>;
         };
 
         layer_3 {
