@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   Diiii:
-  - ESC
+  - +
   - '1'
   - '2'
   - '3'
@@ -13,36 +13,36 @@ layers:
   - '9'
   - '0'
   - '-'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - '-'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - Y
   - U
   - I
   - O
   - P
   - RET
-  - LSHFT
+  - '*'
   - A
   - S
-  - D
-  - F
-  - G
+  - ','
+  - .
+  - RET
   - H
   - J
   - K
   - L
   - ;
   - ''''
-  - LCTRL
+  - /
   - Z
   - X
-  - C
-  - V
-  - B
+  - ;
+  - ''''
+  - LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - N
