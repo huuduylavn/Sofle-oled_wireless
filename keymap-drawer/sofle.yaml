@@ -26,8 +26,8 @@ layers:
   - P
   - RET
   - '*'
-  - A
-  - S
+  - ESCAPE
+  - TAB
   - ','
   - .
   - RET
@@ -38,8 +38,8 @@ layers:
   - ;
   - ''''
   - /
-  - Z
-  - X
+  - CAPS
+  - CALCULATOR
   - ;
   - ''''
   - LEFT GUI
