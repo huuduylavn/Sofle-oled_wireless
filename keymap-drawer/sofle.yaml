@@ -38,8 +38,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - /
-  - CAPS
-  - '&AltFUB'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ;
   - ''''
   - LEFT GUI
@@ -67,7 +67,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
