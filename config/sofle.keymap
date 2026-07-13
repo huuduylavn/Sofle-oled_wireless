@@ -115,7 +115,9 @@
                 <&macro_tap>,
                 <&kp F &kp U &kp B>,
                 <&macro_release>,
-                <&kp LEFT_ALT &kp ENTER>;
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp ENTER>;
 
             label = "ALTFUB";
         };
