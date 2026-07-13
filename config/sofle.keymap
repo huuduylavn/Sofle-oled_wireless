@@ -109,7 +109,14 @@
         AltFUB: AltFUB {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp F &kp U &kp B &kp ENTER>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp F &kp U &kp B>,
+                <&macro_release>,
+                <&kp LEFT_ALT &kp ENTER>;
+
             label = "ALTFUB";
         };
     };
