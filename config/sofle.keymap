@@ -123,7 +123,14 @@
         ctrlshiftf9: ctrlshiftf9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(F9))>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp F9>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_SHIFT>;
+
             label = "CTRLSHIFTF9";
         };
     };
